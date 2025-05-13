@@ -1,0 +1,236 @@
+.tab.current-tab{
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.form-container.active{
+    scale: 1;
+    margin-top: -2rem;
+}
+
+.loading-container.active{
+    scale: 1;
+}
+
+.user-info-container.active{
+    scale: 1;
+}
+
+.grant-location-container.active{
+    scale: 1;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(136deg, rgba(63, 81, 181, 1) 56%, rgba(33, 150, 243, 1) 100%);
+    place-items: center;
+    position: relative;
+}
+
+h1{
+   color: white;
+   font-size: 28px; 
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   padding: 15px;
+}
+
+.tab-container{
+    display: flex;
+    gap: 200px;
+}
+
+.tab{
+    color: white;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    margin-top: 27px;
+    margin-bottom: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.weather-container{
+    height: 380px;
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    place-items: center;
+}
+
+.grant-location-container{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    place-items: center;
+    position: absolute;
+    scale: 0;
+}
+
+.location-design{
+    margin-top: 20px;
+    color: white;
+    font-size: 23px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.allow-design{
+    color: white;
+    font-size: small;
+    margin-bottom: 15px;
+}
+
+.Grantbtn{
+    height: 28px;
+    width: 118px;
+    background-color: hsl(247, 96%, 45%);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.loading-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    place-items: center;
+    margin-top: -35px;
+    scale: 0;
+}
+.loading-container p{
+    color: white;
+    font-size: 20px;
+    margin-top: -15px;
+    margin-left: 8px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 10px;
+    scale: 0;
+}
+
+.form-container input{
+    height: 30px;
+    width: 350px;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+}
+
+.form-container input:focus{
+    outline: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+.form-container input::placeholder{
+    padding: 15px;
+}
+
+.Searchbtn{
+    background-color: rgb(11, 11, 252);
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.user-info-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 430px;
+    justify-content: center;
+    place-items: center;
+    margin-top: -25px;
+    scale: 0;
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+}
+
+p[data-cityName]{
+    color: white;
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p[data-weatherDesc]{
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img[data-weatherIcon]{
+    height: 55px;
+    width: 55px;
+}
+
+p[data-temp]{
+    color: white;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.parameter-container{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.parameter{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(219, 226, 239, 0.5);
+    height: 100px;
+    width: 130px;
+    border-radius: 3px;
+    justify-content: center;
+    place-items: center;
+}
+
+.parameter img{
+    height: 35px;
+    width: 35px;
+    margin-top: -10px;
+}
+
+.parameter p{
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img[data-countryIcon]{
+    height: 20px;
+    width: 23px;
+    margin-top: 13px;
+    margin-left: 8px;
+}
